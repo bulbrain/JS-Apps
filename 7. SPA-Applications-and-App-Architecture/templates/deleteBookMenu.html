@@ -1,0 +1,10 @@
+<form id='deleteBookForm'>
+    <select id="selected">
+        {{#books}}
+        <option id="{{objectId}}">
+            {{title}}
+        </option>
+        {{/books}}
+    </select>
+    <input type='button' id='submit' value='Delete!'/>
+</form>

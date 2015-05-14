@@ -1,0 +1,18 @@
+<table id="booksTable">
+    <thead>
+    <tr>
+        <td>Title:</td>
+        <td>Author:</td>
+        <td>ISBN:</td>
+    </tr>
+    </thead>
+    <tbody id="books">
+    {{#books}}
+    <tr id="{{objectId}}">
+        <td>{{title}}</td>
+        <td>{{author}}</td>
+        <td>{{isbn}}</td>
+    </tr>
+    {{/books}}
+    </tbody>
+</table>
