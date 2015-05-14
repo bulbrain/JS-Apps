@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Background Color Switch</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="BackgroundColorSwitch.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+    <h1>Background Color Switch</h1>
+
+    <p>Write a script using jQuery for switching the background color of elements with a specified class. <br>
+    The input should be read from an input form. There are 2 classes "bird" and "dog"</p>
+    <a href="../Main.html" id="back">Go back</a>
+    <form>
+        <label for="class">Class: </label>
+        <input type="text" id="class"><br>
+        <label for="color">Color: </label>
+        <input type="color" id="color"><br>
+        <input type="button" value="Paint" onclick="paint()">
+    </form>
+    <ul>
+        <li class="bird">Hummingbird</li>
+        <li class="dog">German Shepherd</li>
+        <li class="bird">Nightingale</li>
+        <li>Lizard</li>
+        <li class="bird">Eagle</li>
+        <li class="dog">Doberman</li>
+        <li class="bird">Sparrow</li>
+    </ul>
+</body>
+</html>

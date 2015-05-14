@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Table Generator</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="TableGenerator.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+    <h1>Table Generator</h1>
+    <p>Write a script using jQuery that reads a JSON string which contains information about cars and generates an HTML table.</p>
+    <a href="../Main.html" id="back">Go back</a>
+    <div>
+        <form>
+            <label for="text">Input:</label><br>
+            <textarea id="textarea">[{"manufacturer":"BMW","model":"E92 320i","year":2011,"price":50000,"class":"Family"},
+        {"manufacturer":"Porsche","model":"Panamera","year":2012,"price":100000,"class":"Sport"},
+        {"manufacturer":"Peugeot","model":"305","year":1978,"price":1000,"class":"Family"}]</textarea><br>
+            <input type="button" value="Generate!" onclick="generateTable()">
+        </form>
+    <div id="wrapper"></div>
+    </div>
+</body>
+</html>
