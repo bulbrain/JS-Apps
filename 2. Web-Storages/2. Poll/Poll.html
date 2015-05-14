@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Poll</title>
+
+</head>
+<body>
+<p id="timer">You have <span id="time"></span> minutes to finish the poll</p>
+<form id="forn">
+    <select id="naMe" onclick="saveName()">
+        <h4>Select your name</h4>
+        <option value="pesho">Pesho<br>
+        <option value="gosho">Gosho<br>
+        <option value="bayIvan">Bay Ivan<br>
+        <option value="other">Other :(
+    </select>
+    <select id="gender" onclick="saveGender()">
+        <h4>Select your gender</h4>
+        <option value="male">Male<br>
+        <option value="female">Female<br>
+        <option value="none">None<br>
+        <option value="noAnswer">I dont want to answer this
+    </select>
+    <select id="vehicle" onclick="saveVehicle()">
+        <h4>Select your vehicle</h4>
+        <option value="bike">Bike<br>
+        <option value="motorcycle">Motorcycle<br>
+        <option value="car">Car<br>
+        <option value="airplane">Airplane
+    </select>
+    <select id="pet" onclick="savePet()">
+        <h4>Select your pet</h4>
+        <option value="cat">Cat<br>
+        <option value="dog">Dog<br>
+        <option value="other">Other<br>
+        <option value="none">None
+    </select>
+    <input type="button" value="Submit!" onclick="submitAnswers()">
+</form>
+<div id="answers"></div>
+</body>
+<script src="Poll.js"></script>
+</html>
